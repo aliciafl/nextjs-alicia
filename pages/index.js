@@ -1,12 +1,11 @@
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
+import Layout from '../components/Layout'
 
 export default function Home() {
   return (
     <div>
-      <Navbar />
-      <h1>This is the home page</h1>
-      <Footer />
+      <Layout>
+        <div className="container mx-auto p-4 text-center">The content from Storyblok will follow soon...</div>
+      </Layout>     
     </div>
   )
 }
