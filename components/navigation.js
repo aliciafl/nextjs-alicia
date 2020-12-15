@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'next/link';
 
 export default function Navbar({ fixed , settings}) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -30,19 +31,19 @@ export default function Navbar({ fixed , settings}) {
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <li className="nav-item">
-                <a className="px-3 py-2 flex items-center text-xs font-bold leading-snug text-black hover:opacity-75" href="/">
+                <Link className="px-3 py-2 flex items-center text-xs font-bold leading-snug text-black hover:opacity-75" href="/">
                   <span className="ml-2">Projects</span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="px-3 py-2 flex items-center text-xs font-bold leading-snug text-black hover:opacity-75" href="/lifestyle">
+                <Link className="px-3 py-2 flex items-center text-xs font-bold leading-snug text-black hover:opacity-75" href="/lifestyle">
                   <span className="ml-2">Lifestyle</span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="px-3 py-2 flex items-center text-xs  font-bold leading-snug text-black hover:opacity-75" href="/About">
+                <Link className="px-3 py-2 flex items-center text-xs  font-bold leading-snug text-black hover:opacity-75" href="/about">
                   <span className="ml-2">About</span>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
