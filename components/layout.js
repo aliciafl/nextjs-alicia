@@ -3,11 +3,17 @@ import Navigation from '../components/navigation'
 import Footer from '../components/footer'
 
 const Layout = ({ children }) => (
-  <div className="bg-gray-300">
-    <Head />
-    <Navigation />
-    {children}
-    <Footer />
+  <div className="bg-white flex flex-col min-h-screen ">
+    <header>
+      <Head />
+      <Navigation/>
+    </header>
+    
+    <main className="flex-grow">
+      {children}
+    </main>   
+    
+    <Footer/>
   </div>
 )
 

@@ -1,13 +1,12 @@
 import React from 'react'
-import Navigation from "../components/navigation";
-import Footer from "../components/footer";
+import Layout from '../components/layout'
 
 function Lifestyle() {
     return (
         <div>
-            <Navigation />
-            <h1>This is the lifestyle page</h1>
-            <Footer />           
+            <Layout>
+                 <div className="container mx-auto p-4 text-center">The lifestyle page...</div>
+            </Layout>     
         </div>
     )
 }

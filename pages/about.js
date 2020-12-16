@@ -1,13 +1,12 @@
 import React from 'react'
-import Navigation from "../components/navigation";
-import Footer from "../components/footer";
+import Layout from '../components/layout'
 
 function About() {
     return (
         <div>
-            <Navigation />
-            <h1>This is the about page</h1>
-            <Footer />
+            <Layout>
+                 <div className="container mx-auto p-4 text-center">The about page...</div>
+            </Layout>     
         </div>
     )
 }
